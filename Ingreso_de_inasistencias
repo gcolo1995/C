@@ -1,0 +1,35 @@
+/*************
+Ingresar la cantidad de clases del cuatrimestre. Luego ingresar la cantidad de inasistencias del alumno
+Informar si asistió al 70% o mas "Regular", entre 50% y 70% "Recuperatorio" y menor de 50% "Recursa"
+
+USO: prinf - scanf - if - else
+*************/
+
+#include <stdio.h>
+
+int main()
+{
+    int cantClases,inasistencias, porcentaje;
+    printf("Ingrese la cantidad de clases del cuatrimestre: ");
+    scanf("%d",&cantClases);
+    printf("Ingrese la cantidad de inasistencias del alumno: ");
+    scanf("%d",&inasistencias);
+
+        if (50 > ((cantClases-inasistencias)*100/cantClases))
+            printf("Recursa");
+        else
+        {
+            if (70>((cantClases-inasistencias)*100/cantClases)&&50<=((cantClases-inasistencias)*100/cantClases))
+                printf("Recuperatorio");
+            else
+            {
+                if (70<=((cantClases-inasistencias)*100/cantClases))
+                    printf("Regular");
+               
+                else 
+                    printf("Inasistencias mal ingresada");
+            }
+        }
+   
+    return 0;
+}
