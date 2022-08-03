@@ -1,3 +1,9 @@
+/*************
+Ingresar 3 valores enteros y mostrarlos en orden decreciente/creciente
+
+USO: prinf - scanf - if - aux para ordenar
+*************/
+
 #include <stdio.h>
 
 int main ()
