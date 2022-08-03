@@ -1,3 +1,9 @@
+/*************
+Ingresar una nota e inforamr si la nota es menor que 4 "Reprobado", entre 4 y 6 "Regular" y mayor que 6 "Promovido"
+
+USO: prinf - scanf - if - else
+*************/
+
 #include <stdio.h>
 
 int main()
