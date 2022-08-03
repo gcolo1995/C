@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main ()
+{
+    int valor1, valor2, valor3, aux1;
+    printf ("Ingrese valor 1: ");
+    scanf ("%d", &valor1);
+    printf ("Ingrese valor 2: ");
+    scanf ("%d", &valor2);
+    printf ("Ingrese valor 3: ");
+    scanf ("%d", &valor3);
+    {
+    if (valor1 > valor2)
+    {
+        aux1 = valor2;
+        valor2 = valor1;
+        valor1 = aux1;
+    }
+    if (valor2 > valor3)
+    {
+        aux1 = valor3;
+        valor3 = valor2;
+        valor2 = aux1;
+    }
+    if (valor1 > valor2)
+    {
+        aux1 = valor2;
+        valor2 = valor1;
+        valor1 = aux1;
+    }
+    printf ("Los valores ordenados son: %d; %d; %d.", valor1, valor2, valor3);
+    }
+    return 0;
+}
