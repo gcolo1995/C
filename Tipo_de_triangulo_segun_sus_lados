@@ -1,3 +1,11 @@
+/*************
+Ingresar los valores de dos ángulos de un triángulo. Calcular el tercero.
+Informar y terminar el programa si los ángulos suman más de  180º
+Una vez que tenga los 3 ángulos, informar que tipo de triángulo es (rectángulo, obtusángulo o acutángulo)
+
+USO: prinf - scanf - if - else
+*************/
+
 #include <stdio.h>
 
 int main()
