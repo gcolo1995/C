@@ -1,0 +1,49 @@
+/*************
+Ingresar un número de mes e indicar la cantidad de días que posee.
+Agregar el número del año para saber si el se trata de un año bisiesto 
+
+USO: prinf - scanf - switch - break - default - in - else
+*************/
+
+#include <stdio.h>
+
+int main()
+{
+    int mes, anio;
+    printf("Ingrese el número de mes: ");          
+    scanf("%d",&mes);
+    printf("Ingrese el año: ");          
+    scanf("%d",&anio);
+   
+    switch(mes)
+    {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            printf("31 días");
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            printf("30 días");
+            break;
+        case 2:
+           
+            if ( anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0)
+                printf("29 días");
+            else
+                printf("28 días");
+                break;
+           
+        default:
+            printf("El nro ingresado no es válido");
+            break;
+    }
+   
+    return 0;
+}
