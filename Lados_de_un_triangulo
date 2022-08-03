@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int primerAngulo, segundoAngulo, tercerAngulo;
+     printf ("Ingresar el primer angulo ");
+     scanf ("%d", &primerAngulo);
+     printf ("Ingresar el segundo angulo ");
+     scanf ("%d", &segundoAngulo);
+    {
+    if (180 <= (primerAngulo + segundoAngulo))
+        printf ("Los ángulos ingresados no conforman un triángulo");
+         
+    else
+    {
+        tercerAngulo = 180 - (primerAngulo + segundoAngulo);
+        printf ("El tercer ángulo del triángulo es de %d ", tercerAngulo );
+        {
+            if (90 == primerAngulo||90 == segundoAngulo||90 == tercerAngulo)
+                printf ("\nSe trata de un triángulo rectángulo");
+            else
+            {
+                if (90>=primerAngulo||90>=segundoAngulo||90>=tercerAngulo)
+                    printf ("\nSe trata de un triángulo obtusángulo");
+                else
+                    printf ("\nSe trata de un triángulo acutángulo");
+                }
+        }
+    }
+    }
+return 0;
+}
