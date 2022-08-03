@@ -1,0 +1,28 @@
+/*************
+Ingresar varios números reales y calcular la raízcuadrada de la sumatoria de los cuadrados de cada uno
+
+USO: prinf - scanf - for - sqrt 
+*************/
+
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int cantNros, valores, cuadradoValores,i;
+    float raiz,sumaCuadrados;
+    printf("Ingrese la cantidad de números a ingresar: ");
+    scanf("%d",&cantNros);
+       
+    for(i=1;i<=cantNros;i++)
+    {
+        printf("Ingrese el valor del número %d: ",i);
+        scanf("%d",&valores);
+        cuadradoValores=valores*valores;
+        sumaCuadrados+=cuadradoValores;
+    }
+    raiz = sqrt(sumaCuadrados);
+    printf("La raíz cuadrada de la suma de los cuadrados de los valores es: %.2f",raiz);
+
+    return 0;
+}
