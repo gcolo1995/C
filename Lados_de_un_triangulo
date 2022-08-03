@@ -1,3 +1,9 @@
+/*************
+Ingresar los valores 3 ángulos de un supuesto triángulo e informar si lo es o no lo es
+
+USO: prinf - scanf - if - else
+*************/
+
 #include <stdio.h>
 
 int main()
